@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HOW-TO: Программа на Python, Часть 1 <img src="Icon-Python.png" alt="" align="right"></h1>
+    <ul>
+        <li><i><a href="Base_homework1.html">Программа на Python — часть 1</a></i></li>
+        <li><i><a href="Base_homework2.html">Программа на Python — часть 2</a></i></li>
+        <li><i><a href="Base_homework3.html">Программа на Python — часть 3</a></i></li>
+    </ul>
+    <p><a name = "content"></a></p>
+    <h2>Содержание</h2> 
+    <h3>HOW-TO:Программа на Python, Часть 1</h3>
+    <ul>
+        <li> <a href="#firstp"> Наша первая программа</a></li>
+        <li><a href="#for">Пример цикла For</a></li>
+    </ul>
+    <p>
+        Из множества существующих языков программирования Python — один из самых лёгких
+        в изучении. Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился.
+        Хотя Python входит в состав большинства дистрибутивов Linux, на него часто не
+        обращают внимания при выборе языка для изучения. В этой статье мы рассмотрим
+        создание консольных приложений, а в следующей — программирование графических
+        интерфейсов (GUI). Давайте создадим простую программу прямо сейчас.
+    </p>
+    <p><a name = "firstp"></a></p>
+    <h2>Наша первая программа</h2>
+    <p><a href="#content">К содержанию</a></p>
+    <p>
+        Наберём код в текстовом редакторе (например, в <b>gedit</b>). Потом мы разберёмся, что делает
+        каждая строка и пойдём дальше.
+    </p>
+    <p>
+        Введите эти 4 строки:
+    </p>
+    <pre>
+    <code>
+#!/usr/bin/env python
+print 'Hello. I am a python program.'
+name = raw_input("What is your name?")
+print "Hello there, " + name + "!"
+    </code>
+    </pre>
+    <p>
+        Это всё. Сохраните файл как <b>hello.py</b> в любом месте. Я предлагаю сохранить его в папке
+<b>python_examples</b> в домашнем каталоге. Этот пример показывает, как просто написать
+программу на Python. Для запуска программы нужно сделать её файл исполняемым. Для
+этого введите в терминале
+    </p>
+    <code><b><i><u>chmod +x hello.py</u></i></b></code>
+    <p>в папке, в которой вы сохранили программу. Теперь запустите её.</p>
+    <pre>
+    <code>
+greg@earth:~/python_examples$ ./hello.py
+Hello. I am a python program.
+What is your name? Ferd Burphel
+Hello there, Ferd Burphel! 
+greg@earth:~/python_examples$
+    </code>
+</pre>
+    <p>Вот и всё.</p>
+    <p><a name = "for"></a></p>
+    <h2>Пример цикла For</h2>
+    <p><a href="#content">К содержанию</a></p>
+    <p>
+        Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый
+        редактор и наберите следующую программу:
+    </p>
+    <pre>
+        <code>#!/usr/bin/env python 
+        for cntr in range(0,10): 
+            print cntr
+        </code>
+    </pre>
+    <p>
+        <em>Не забудьте поставить символ табуляции перед строкой «print cntr»</em>. Это важно. В Python для указания на блоки кода используются не круглые «(» и фигурные «{» скобки как в других языках программирования, а отступы.
+    </p>
+    <table width="100%">
+        <tr>
+            <td><p><a href=""><svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>move to the previous article</title>
+                <g fill="#111111">
+                    <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path>
+                </g>
+            </svg></a></p></td>
+            <td><p align="center"><a href="#content"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>move to the content</title><g stroke-linecap="square" 
+                stroke-linejoin="miter" stroke-width="2" fill="#111111" stroke="#111111"><polyline fill="none" stroke="#111111" stroke-miterlimit="10" 
+                points="4,9.273 4,22 10,22 10,17 14,17 14,22 20,22 20,9.273 " stroke-linecap="butt"></polyline> <rect x="10" y="9" fill="none" stroke-miterlimit="10"
+                 width="4" height="4"></rect> <polyline fill="none" stroke-miterlimit="10" points="5,8.364 5,3 7,3 7,6.545 " stroke-linecap="butt"></polyline> <polyline fill="none"
+                  stroke-miterlimit="10" points="1,12 12,2 23,12 " stroke-linecap="butt"></polyline></g></svg></a></p></td>
+            <td><p align="right"><a href="Base_homework2.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>move to the next article</title>
+                    <g fill="#111111">
+                        <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                    </g>
+                </svg></a></p></td>
+        </tr>
+    </table>
+</body>
+</html>
